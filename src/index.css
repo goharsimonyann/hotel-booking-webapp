@@ -1,0 +1,236 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* @import {banner} from "/client/public/home-banner.png"; */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100vh;
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+  background-color: var(--white);
+}
+:root {
+  --white: #f5f6f6;
+  --green: #42635c;
+}
+.header {
+  background-color: var(--white) !important;
+  font-weight: 500;
+}
+
+.avatar {
+  cursor: pointer;
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+  background-color: var(--white);
+  color: var(--green);
+  outline: none;
+}
+
+.nav-link {
+  color: var(--green);
+}
+
+.search-bar {
+  background-color: var(--green);
+  border-radius: 2px;
+  width: 100%;
+  height: 100%;
+}
+
+.search-bar__location--input {
+  font-size: 15px;
+}
+.search-bar__date--input,
+.add-hotel__date--input {
+  border-radius: 7px;
+  font-size: 28px;
+  color: var(--green);
+}
+
+.search-bar__bed--input option {
+  color: var(--green);
+  font-size: 16px;
+}
+
+.search-bar__button {
+  border: 2px solid var(--white);
+  background-color: var(--white);
+  color: var(--green);
+  font-weight: 400;
+}
+
+.search-bar__button:hover {
+  border: 2px solid var(--white);
+  background-color: var(--green);
+  color: var(--white);
+}
+.header__conatainer--logo {
+  width: 200px;
+  height: 75px;
+}
+
+.vh-85 {
+  height: 85vh;
+}
+
+.top-30 {
+  top: 30px;
+}
+
+.vh-50 {
+  height: 50vh;
+}
+
+.footer {
+  padding: 30px;
+  background-color: var(--green);
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.spinner-custom {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.hotel-card {
+  height: 500px;
+  max-height: 600px;
+  color: var(--green);
+  transition: all 0.2s;
+}
+
+.hotel-card:hover {
+  transform: scale(1.1);
+}
+
+.seller:hover {
+  transform: scale(1);
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.hotel-card__title {
+  font-weight: 600;
+  font-size: 28px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.height-50 {
+  height: 50%;
+}
+
+.height-30 {
+  height: 30%;
+}
+
+.home-banner {
+  height: calc(100vh - 100px);
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../public/home-banner.jpg');
+}
+
+.home-banner__heading {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-banner__heading--background {
+  width: 900px;
+  height: 300px;
+  padding: 20px;
+  background-color: rgba(245, 246, 246, 0.6);
+}
+
+.home-banner__heading--primary {
+  font-size: 64px;
+  font-weight: 500;
+  color: var(--green);
+}
+
+.home-banner__heading--secondary {
+  font-size: 48px;
+  color: var(--green);
+}
+
+.register-page,
+.login-page {
+  margin: 80px 0;
+}
+.register-banner {
+  padding: 0 !important;
+  background-position: center;
+  background-clip: content-box;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('../public/register-bg.png');
+}
+
+.input-focus:focus {
+  outline: none;
+  outline: var(--green) !important;
+}
+
+.footer__contacts ul li {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.register-page__button,
+.login-page__button,
+.not-connected__button,
+.add-hotel__button,
+.edit-hotel__button {
+  width: 100%;
+  border-radius: 20px;
+  border: 2px solid var(--green);
+  background-color: rgba(66, 99, 92, 0.1);
+  color: var(--green);
+  font-weight: 500;
+}
+
+.register-page__button:hover,
+.login-page__button:hover,
+.not-connected__button:hover,
+.add-hotel__button:hover,
+.edit-hotel__button:hover {
+  border: 2px solid var(--white);
+  background-color: rgba(66, 99, 92, 0.6);
+  color: var(--white);
+  font-weight: 400;
+}
+
+.register-page__button:disabled {
+  opacity: 0.3 !important;
+}
+
+.error-message {
+  color: rgb(225, 90, 90);
+  font-size: small;
+}
+
+.box-shadow {
+  box-shadow: none !important;
+  border: none !important;
+}
